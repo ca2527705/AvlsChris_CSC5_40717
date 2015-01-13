@@ -5,10 +5,18 @@
  * Created on January 13, 2015, 7:59 PM
  */
 
+//System Libraries
 #include <iostream>
 
 using namespace std;
 
+//User Libraries
+
+//Global Constants
+
+//Function Prototypes
+
+//execution begins here!
 int main(int argc, char** argv) {
     char ans;
     const float c_constant=35273.92;
