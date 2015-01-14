@@ -18,31 +18,33 @@ using namespace std;
 
 //Execution begins here!
 int main(int argc, char** argv) {
+    
     //Declare variables
-    float i;//Interest Rate per cent
+    float i;//Interest Rate per cent per year
     float t;//Temp variable
     float l;//Loan amount $'s
-    float n;//Number of months
+    unsigned short n;//Number of months
     float mp;//Monthly Payment $'s
-    //Input the 
-    cout<<"What is the interest rate in per cent per year? (format float)"<<endl;
+    //Input the variables required
+    cout<<"What is the interest rate in per cent per year!(format float)"<<endl;
     cin>>i;
-    i/=(100*12);//convert to decimal
+    i/=(100*12);//Convert to decimal
     cout<<"What is the loan amount $'s (floating format)"<<endl;
     cin>>l;
     cout<<"Number of monthly Payments (format integer)"<<endl;
     cin>>n;
     //Calculate the monthly payment
     if(i<=0){
-        mp=1/n;
+    mp=l/n;
     }else{
-        t=pow(1+i,n);
-        mp=i*t*1/(t-1);  
+    t=pow(1+i,n);
+    mp=i*t*l/(t-1);
     }
     //Display the results
     cout<<fixed<<setprecision(2);
     cout<<"Your monthly payment = $"<<mp<<endl;
-    //Exit Stage right!
-    return 0;
+    //Exit stage right!
+    
+return 0;
 }
 
