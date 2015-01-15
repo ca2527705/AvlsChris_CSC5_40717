@@ -3,6 +3,7 @@
  * Author: Christopher Avalos
  * Purpose: Babylonian algorithm
  * Created on January 13, 2015, 11:35 AM
+ * While Group
  */
 
 //System Libraries
@@ -20,7 +21,7 @@ using namespace std;
 //Execution begins here
 int main(int argc, char** argv) {
     //Declare variables
-    float number, guess, r,count=0;
+    float number, guess, r;
     //Input a number
     
     cout<<"Input a number to estimate it's square root.\n";
@@ -28,15 +29,13 @@ int main(int argc, char** argv) {
     cin>>number;
     //First pass
     guess=number/2;
-    do{
+   for (int count=1;abs(guess-r)>.01;count++){
         r=number/guess;
         guess=(guess+r)/2;
-        count++;
         //output the first pass
         cout<<"Loop "<<count<<" ";
-        cout<<"Calculate the next guess -> "<<guess<<endl;
-    //}while(guess!=r);//The books preference
-     } while(abs(guess-r)>.01);
+        cout<<" -> "<<guess<<endl;
+     } 
     //Exit stage right
             
             

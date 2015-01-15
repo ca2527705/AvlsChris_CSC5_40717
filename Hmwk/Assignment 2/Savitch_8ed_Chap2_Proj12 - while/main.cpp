@@ -3,6 +3,7 @@
  * Author: Christopher Avalos
  * Purpose: Babylonian algorithm
  * Created on January 13, 2015, 11:35 AM
+ * While Group
  */
 
 //System Libraries
@@ -28,15 +29,14 @@ int main(int argc, char** argv) {
     cin>>number;
     //First pass
     guess=number/2;
-    do{
+   while(abs(guess-r)>.01){
         r=number/guess;
         guess=(guess+r)/2;
         count++;
         //output the first pass
         cout<<"Loop "<<count<<" ";
-        cout<<"Calculate the next guess -> "<<guess<<endl;
-    //}while(guess!=r);//The books preference
-     } while(abs(guess-r)>.01);
+        cout<<" -> "<<guess<<endl;
+     } 
     //Exit stage right
             
             
