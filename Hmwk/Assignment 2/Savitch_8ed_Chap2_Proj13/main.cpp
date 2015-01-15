@@ -1,7 +1,7 @@
 /*
 * File: main.cpp
-* Author: Dr Mark E. Lehr *
-* Created on January 13, 2015, 8:50 PM
+* Author: Dr Mark E. Lehr * modded by christopher avalos
+* Created on January 13, 2015, 9:50 AM
 */
 //System Libraries
 #include <iostream>
