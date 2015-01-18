@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Christopher Avalos
  * Created on January 8, 2015, 10:23 AM
- * Purpose: Hmwk Proj2
+ * Purpose: Hmwk Proj4
  */
 
 //System Libraries
