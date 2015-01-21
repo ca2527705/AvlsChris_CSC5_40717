@@ -44,7 +44,7 @@ int nFactrl(int n){
     int factorial=1;
     if(n==0||n==1)return factorial;
     else if(n<=13){
-        for(int i=1;i<=13;i++){
+        for(int i=2;i<=n;i++){
                 factorial*=i;
     }
         return factorial;
