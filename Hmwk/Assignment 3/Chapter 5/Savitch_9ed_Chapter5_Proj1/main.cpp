@@ -14,47 +14,37 @@ using namespace std;
 //Global constants
 
 //Function prototypes
-void time(float,float,float);
+void time(int&,int&);
 //read the military time
-void conver(float);
-//converts it into a 12 hr notation
-void output(float,float);
+void output(int,int);
 //show it to them
 
 int main(int argc, char** argv) {
-    float timehr,timemin;
-    char tod;
+    int timehr,timemin;
     
-    time(timehr,timemin,tod);
-    conver(tod);
-    output(timehr,timehr);
-            
-   
+    time(timehr,timemin);
+    output(timehr,timemin);
     return 0;
 }
 
-void time(float timehr,float timemin,float tod){
+void time(int& timehr,int& timemin){
+    using namespace std;
     
-    cout<<"Insert the hr of the day in military time\n";
+    cout<<"Insert the hr of the day in military time with two integers\n";
     cin>>timehr;
-    cout<<"Insert the time in minutes\n";
+    cout<<"Insert the time in minutes with two integers\n";
     cin>>timemin;
-    cout<<"Insert if it is am or pm, use A for am and P for pm\n";
-    cin>>tod;
-    
-    return;
 }
 
-void conver(float timehr){
-    char tod;
-    if (tod=='P'||tod=='p'){
-        timehr=timehr-12;
-    return;            
+
+
+void output(int ntimehr,int ntimemin){
+    using namespace std;
+    if (ntimehr<=12){
+    cout<<"The time is "<<ntimehr<<":"<<ntimemin<<"AM"<<endl;
     }
-}
+    else if (ntimehr-=12){
+    cout<<"The time is "<<ntimehr<<":"<<ntimemin<<"PM"<<endl;
+    }
+    }
 
-void output(float timehr,float timemin){
-    cout<<"The time is"<<timehr<<"and"<<timemin<<endl;
-    return;
-    
-}

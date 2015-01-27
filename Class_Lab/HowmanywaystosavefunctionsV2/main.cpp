@@ -23,8 +23,8 @@ float save2(float,float,int);
 float save3(float,float,int);
 float save4(float,float,int);
 float save4(float,float,float);
-void save5(float &,float,float,float);
-int save5(float &,float,float,int);
+void save5(float &,float,float,float);//Reference variable
+int save5(float &,float,float,int);//Static variable
 
 //Global Constants
 int main(int argc, char** argv) {
