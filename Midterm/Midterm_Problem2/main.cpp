@@ -10,8 +10,8 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-    //Declare variables
-    int number;
+    short number;
+    
 
     cout<<"Input a number from 1000 to 9999"<<endl;
     cin>>number;
@@ -26,9 +26,8 @@ int main(int argc, char** argv) {
             case 4: cout<<"4 ****\n";break;
             case 3: cout<<"3 ***\n";break;
             case 2: cout<<"2 **\n";break;
-            case 1:cout<<"1 *\n";break;
+            case 1: cout<<"1 *\n";break;
             default:cout<<"?\n";break;
-            return 0;
     }
     number-=thousands*1000;
     char hundreds=(number-number%100)/100;
@@ -41,9 +40,8 @@ int main(int argc, char** argv) {
             case 4: cout<<"4 ****\n";break;
             case 3: cout<<"3 ***\n";break;
             case 2: cout<<"2 **\n";break;
-            case 1:cout<<"1 *\n";break;
+            case 1: cout<<"1 *\n";break;
             default:cout<<"?\n";break;
-            return 0;
     }
     number-=hundreds*100;
     char tens=(number-number%10)/10;
@@ -56,9 +54,8 @@ int main(int argc, char** argv) {
             case 4: cout<<"4 ****\n";break;
             case 3: cout<<"3 ***\n";break;
             case 2: cout<<"2 **\n";break;
-            case 1:cout<<"1 *\n";break;
+            case 1: cout<<"1 *\n";break;
             default:cout<<"?\n";break;
-            return 0;
         }      
     number-=tens*10;
     char ones=number;
@@ -71,12 +68,14 @@ int main(int argc, char** argv) {
             case 4: cout<<"4 ****\n";break;
             case 3: cout<<"3 ***\n";break;
             case 2: cout<<"2 **\n";break;
-            case 1:cout<<"1 *\n";break;
+            case 1: cout<<"1 *\n";break;
             default:cout<<"?\n";break;
-            return 0;
         }
         return 0;
     }
     return 0;
 }
+
+
+
 
